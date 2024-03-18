@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="main" style="position: relative;">
+
+      <form action="" class="form" onsubmit="submitHandler(event)">
+        <h2>Player Information</h2>
+
+        <label for="" >Name: <br>
+            <input type="text" name="name" id="name">
+        </label>
+
+        <label for="">Date of Birth: <br>
+            <input type="date" name="dob" id="dob">
+        </label>
+
+        <label for="">Photo URL: <br>
+            <input type="url" name="url" id="url">
+        </label>
+
+        <label for="">Birthplace: <br>
+            <input type="text" name="birthplace" id="birthplace">
+        </label>
+
+        <label for="">Career: <br>
+            <textarea name="career" id="career" cols="30" rows="10"></textarea>
+        </label>
+
+
+        <label for="">Number of Matches: <br>
+            <input type="number" name="numMatches" id="numMatches">
+        </label>
+
+        <label for="">Score:  <br>
+            <input type="number" name="score" id="score">
+        </label>
+
+        <label for="">Fifties:  <br>
+            <input type="number" name="fifties" id="fifties">
+        </label>
+
+        <label for="">Centuries:  <br>
+            <input type="number" name="centuries" id="centuries">
+        </label>
+
+        <label for="">Wicket:  <br>
+            <input type="number" name="wicket" id="wicket">
+        </label>
+
+        <label for="">Average:  <br>
+            <input type="number" name="average" id="average">
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>   
+
+   
+
+    <form action="" onsubmit="searchHandler(event)" class="searchform">
+        <input type="text" id="searchdata">
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="showDiv" style="display: none;" class="displaybox">
+
+        
+        <button id="btn" onclick="editfun()">Edit Player</button>
+        <div class="left">
+            
+            <div>
+               <img src="" alt="" id="playerImg">
+               <p  class="subHeading" id="playerName"></p>
+               <p id="playerDob"></p>
+               
+            </div>
+
+            <div>
+                <h1>Personal Information</h1> <br>
+                <p class="subHeading">No. of Matches: <span id="m"></span></p>
+                <p class="subHeading">Runs: <span id="r"></span></p>
+                <p class="subHeading">No. of fifties: <span id="f"></span></p>
+                <p class="subHeading">No. of centuries :<span id="c"></span></p>
+                <p class="subHeading">No. of wickets :<span id="w"></span></p>
+                <p class="subHeading">Average :<span id="a"></span></p>
+            </div>
+        </div>
+
+        <div class="right">
+            <div id="description"></div>
+        </div>
+
+    </div>
+
+    <script src="js.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+</body>
+</html>

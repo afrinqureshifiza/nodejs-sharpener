@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Chat Page</h1>
+    
+    <form action="/" method="post" onsubmit={submitHandler()}>
+      <label for="">
+        Add Chat :
+        <input type="text" name="message" placeholder="message" id="message">
+        <input type="hidden" name="username" id="username">
+        <button type="submit">Send</button>
+      </label>
+    </form>
+    <script>
+        function submitHandler(){
+            document.getElementById('username').value=localStorage.getItem('username')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.form{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 400px;
+    margin:0 auto ;
+    height: 100%;
+    padding-bottom: 14px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+h2{
+    background-color: rgb(177, 239, 239);
+    text-align: center;
+    height: 60px;
+    padding-top: 20px;
+}
+.form button{
+    width: 200px;
+    margin: 0 auto;
+    height: 30px;
+    background-color: rgb(121, 164, 164);
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+}
+.form label{
+    font-weight: 600;
+    margin-left: 9px;
+}
+textarea{
+    border: 1px solid rgb(164, 163, 163);
+    border-radius: 3px;
+    width: 97%;
+}
+.form label input{
+    border: 1px solid rgb(164, 163, 163);
+    border-radius: 3px;
+    width: 97%;
+
+    height: 35px;
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: rgb(221, 232, 240);
+}
+
+.searchform{
+    
+}
+.searchform input{
+    border: 1px solid rgb(164, 163, 163);
+    border-radius: 3px;
+    width: 200px;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-left: 75%;
+}
+
+.searchform button{
+    width: 150px;
+    margin: 0 auto;
+    height: 30px;
+    background-color: rgb(121, 164, 164);
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.displaybox{
+    display: flex;
+    background-color: rgb(154, 197, 227);
+    position: relative;
+    gap: 50px;
+}
+#btn{
+    position: absolute;
+    background-color: rgb(250, 95, 95);
+    height: 50px;
+    width: 90px;
+    color: white;
+    right: 30px;
+    top: 30px;
+    border: none;
+    border-radius: 3px;
+}
+
+.left{
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+    padding: 20px;
+}
+#playerImg{
+    width: 200px;
+    margin-bottom: 8px;
+}
+#playerName{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.subHeading{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.subHeading span{
+    font-weight: 300;
+}
+
+.right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 80px;
+}

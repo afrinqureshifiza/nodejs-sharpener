@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Appointment</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body style="margin: 0">
+    <h1 class="header">Booking Appointment App</h1>
+    <form onsubmit="handleFormSubmit(event)" class="form">
+        <h2>Add User:</h2>
+      <label for="username" class="label">Username</label>
+      <input class="input" type="text" name="name" id="username" required/> <br>
+
+      <label for="email" class="label">Email</label>
+      <input class="input" type="email" name="email" id="email" required/> <br>
+
+      <label for="phone" class="label">Phone No</label>
+      <input class="input" type="tel" name="number" id="phone" required/> <br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Add Unordered List Element Here -->
+    <ul class="displayList">
+
+    </ul>
+  </body>
+  <script src="js.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+</html>
